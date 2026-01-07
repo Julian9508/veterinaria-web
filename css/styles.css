@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif, "Just Another Hand", cursive;
+  background: #f5f5f5;
+}
+
+.logo {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 49px;
+  font-weight: normal;
+  
+}
+
+.titulo-servicios {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 46px;
+  font-weight: normal;
+}
+
+.header {
+  background: #4CAF50;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header {
+  background: #4CAF50;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.btn-login {
+  background: white;
+  color: #4CAF50;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* MENU */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: .4s ease;
+  z-index: 1000;
+}
+
+.menu-overlay.active {
+  transform: translateY(0);
+}
+
+.menu-links a {
+  display: block;
+  font-size: 36px;
+  margin: 15px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-links a:hover {
+  color: #4CAF50;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 60px;
+  background: white;
+}
+
+.accesos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.servicios {
+  padding: 40px;
+  background: white;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.carrusel {
+  text-align: center;
+  padding: 40px;
+}
+
+.slider {
+  width: 300px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide.active {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.horarios, .contacto {
+  padding: 30px;
+  background: white;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #4CAF50;
+  color: white;
+}
+
+
+/*//boton menu*/
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.menu-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
+
+.menu-overlay.active {
+  transform: translateY(0);
+}
+
+.menu-links a {
+  font-size: 36px;
+  margin: 15px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-links a:hover {
+  color: #4CAF50;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+

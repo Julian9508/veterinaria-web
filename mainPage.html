@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Veterinaria | Inicio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/transiciones.css">
+
+  
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+  <h1 class="logo">Veterinaria Huellitas</h1>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <nav class="menu-links">
+    <a href="./mainPage.html">Inicio</a>
+    <a href="./productos.html">Productos</a>
+    <a href="./servicios.html">Servicios</a>
+    <a href="./index.html#contacto">Contacto</a>
+    <a href="./login.html">Iniciar sesión</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Cuidado y bienestar para tu mascota</h2>
+  <p>Atención profesional y productos de calidad</p>
+</section>
+
+<!-- ACCESOS RAPIDOS -->
+<section class="accesos">
+  <a href="perfil.html" class="card">Perfil</a>
+  <a href="cita.html" class="card">Solicitar Cita</a>
+  <a href="productos.html" class="card">Productos</a>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="servicios">
+  <h2 class="titulo-servicios">Servicios Veterinarios</h2>
+  <div class="servicios-grid">
+    <div>Consulta General</div>
+    <div>Vacunación</div>
+    <div>Desparasitación</div>
+    <div>Cirugía</div>
+    <div>Grooming</div>
+  </div>
+</section>
+
+<!-- CARRUSEL -->
+<section class="carrusel">
+  <h2>Productos Destacados</h2>
+  <div class="slider">
+    <img src="img/producto1.jpg" class="slide active">
+    <img src="img/producto2.jpg" class="slide">
+    <img src="img/producto3.jpg" class="slide">
+  </div>
+  <a href="productos.html" class="btn">Ver todos los productos</a>
+</section>
+
+<!-- HORARIOS -->
+<section class="horarios">
+  <h2>Horarios de Atención</h2>
+  <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+  <p>Sábados: 8:00 am - 2:00 pm</p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+  <h2>Contacto y Ubicación</h2>
+  <p>📍 Calle 123 #45-67</p>
+  <p>📞 300 123 4567</p>
+  <p>✉️ contacto@veterinaria.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Veterinaria Huellitas</p>
+</footer>
+
+
+<script src="js/transiciones.js"></script>
+
+<script src="./js/script.js"></script>
+
+
+</body>
+</html>
