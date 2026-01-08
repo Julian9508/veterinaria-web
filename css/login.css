@@ -1,0 +1,71 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f7f4;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.titulo-login {
+  font-family: "Just Another Hand", cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active {
+  display: flex;
+}
+
+.form input,
+.form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn-principal {
+  padding: 12px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-principal:hover {
+  background: #3e8e41;
+}

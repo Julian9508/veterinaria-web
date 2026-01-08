@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión | Veterinaria Huellitas</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/transiciones.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="top-bar">
+  <h1 class="logo">Veterinaria Huellitas</h1>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <nav class="menu-links">
+    <a href="./mainPage.html">Inicio</a>
+    <a href="./productos.html">Productos</a>
+    <a href="./servicios.html">Servicios</a>
+    <a href="./index.html#contacto">Contacto</a>
+    <a href="./login.html">Iniciar sesión</a>
+  </nav>
+</div>
+
+<main class="login-container">
+
+  <div class="login-box">
+
+    <h1 class="titulo-login">Bienvenido</h1>
+
+    <!-- BOTONES -->
+    <div class="tabs">
+      <button class="tab active" onclick="mostrarLogin()">Iniciar sesión</button>
+      <button class="tab" onclick="mostrarRegistro()">Registrarse</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="form-login" class="form active">
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Contraseña" required>
+
+      <select required>
+        <option value="">Selecciona tu rol</option>
+        <option value="cliente">Cliente</option>
+        <option value="empleado">Empleado</option>
+      </select>
+
+      <button type="submit" class="btn-principal">Iniciar sesión</button>
+    </form>
+
+    <!-- REGISTRO -->
+    <form id="form-registro" class="form">
+
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+
+        <select id="rolRegistro" required>
+            <option value="">Tipo de usuario</option>
+            <option value="cliente">Cliente</option>
+            <option value="empleado">Empleado</option>
+        </select>
+
+        <!-- CAMPO CONTRASEÑA (solo empleados) -->
+        <input 
+            type="password" 
+            id="passwordEmpleado" 
+            placeholder="Contraseña (solo empleados)"
+            style="display: none;"
+        >
+
+        <button type="submit" class="btn-principal">Registrarse</button>
+    </form>
+
+
+  </div>
+
+</main>
+
+<script src="js/login.js"></script>
+<script src="js/transiciones.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
